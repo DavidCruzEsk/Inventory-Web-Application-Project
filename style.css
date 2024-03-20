@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: grey;
+}
+
+.container {
+  border: 2px solid red;
+  background-color: rgb(245, 235, 222);
+}
+
+.header {
+  border: 2px solid green;
+}
+
+#main-section {
+  border: 2px solid black;
+}
+
+#main-section__book-list {
+  border: 2px solid fuchsia;
+}
+
+.book-added {
+  border: 2px solid red;
+}
+
+.bookcover {
+  border: 2px solid blue;
+}
+
+.book-outline {
+  border: 2px solid seagreen;
+}
+
+.book-outline__header {
+  border: 2px solid darkmagenta;
+}
+
+.book-outline__author {
+  border: 2px solid darkmagenta;
+}
+
+.book-outline__stockoption__icon {
+  border: 2px solid darkmagenta;
+}
+
+.book-outline__price {
+  border: 2px solid darkmagenta;
+}
+
+.trash-bin-image {
+  border: 2px solid slateblue;
+}
+
+#main-section__book-description {
+  border: 2px solid blue;
+}
+
+.form-input {
+  border: 2px solid forestgreen;
+}
+
+/*# sourceMappingURL=style.css.map */

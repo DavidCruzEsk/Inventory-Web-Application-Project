@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Project - Pursuit(10.5) Module 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8911774f92.js" crossorigin="anonymous"></script>
+    <script defer src="stript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Booktory</h1>
+        </header>
+        <main id="main-section">
+            <section id="main-section__book-list">
+                <article class="book-added">
+                    <div class="bookcover">
+                        <img src="images/The_Hobbit.png" alt="The_Hobbit-bookcover" width="100px" width="200px">
+                    </div>
+                    <div class="book-outline">
+                        <h1 class="book-outline__header">The Hobbit</h1>
+                        <p class="book-outline__author">J.R.R. TOLKIEN</p>
+                        <p class="book-outline__stockoption">
+                            <div class="book-outline__stockoption__icon">In Stock</div>
+                        </p>
+                        <h1 class="book-outline__price">$42.95</h1>
+                    </div>
+                    <div class="trash-bin-image">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </article>
+                <article class="book-added">
+                    <div class="bookcover">
+                        <img src="images/Les_Miserables.png" alt="Les_Miserables-bookcover" width="100px" width="200px">
+                    </div>
+                    <div class="book-outline">
+                        <h1 class="book-outline__header">Les Miserables</h1>
+                        <p class="book-outline__author">Victor Hugo</p>
+                        <p class="book-outline__stockoption">
+                            <div class="book-outline__stockoption__icon">In Stock</div>
+                        </p>
+                        <h1 class="book-outline__price">$27.00</h1>
+                    </div>
+                    <div class="trash-bin-image">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </article>
+                <article class="book-added">
+                    <div class="bookcover">
+                        <img src="images/Dune.png" alt="dune-bookcover" width="100px" width="200px">
+                    </div>
+                    <div class="book-outline">
+                        <h1 class="book-outline__header">Dune</h1>
+                        <p class="book-outline__author">Frank Herbert</p>
+                        <p class="book-outline__stockoption">
+                            <div class="book-outline__stockoption__icon">In Stock</div>
+                        </p>
+                        <h1 class="book-outline__price">$20.99</h1>
+                    </div>
+                    <div class="trash-bin-image">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </article>
+            </section>
+            <section id="main-section__book-description">
+                <form id="main-section__book-description__form">
+                    <input type="text" id='book-title' class="form-input">
+                    <input type="text" id="author" class="form-input">
+                    <input type="text" id="book-url" class="form-input">
+                    <input type="text" id="book-price" class="form-input">
+                    <input type="text" id="stock-option" class="form-input">
+                    <button type="submit"  id="add-book" class="add-book">Add Book</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
