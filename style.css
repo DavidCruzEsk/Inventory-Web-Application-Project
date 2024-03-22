@@ -9,12 +9,28 @@ body {
 }
 
 .container {
-  border: 2px solid red;
+  border: none;
   background-color: rgb(245, 235, 222);
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 40px;
 }
 
 .header {
-  border: 2px solid green;
+  border: none;
+  margin-top: 200px;
+  margin-left: 40px;
+}
+.header__booktory {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transform: rotate(270deg);
+  color: navy;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 45px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #main-section {
@@ -22,47 +38,125 @@ body {
 }
 
 #main-section__book-list {
-  border: 2px solid fuchsia;
+  border: none;
+  height: 650px;
+  overflow-y: scroll;
 }
 
 .book-added {
-  border: 2px solid red;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr 2fr;
+  grid-template-rows: 1fr;
 }
 
 .bookcover {
-  border: 2px solid blue;
+  border: none;
 }
 
 .book-outline {
-  border: 2px solid seagreen;
+  border: none;
+  margin-left: 20px;
 }
 
 .book-outline__header {
-  border: 2px solid darkmagenta;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  color: navy;
+  margin-bottom: 10px;
 }
 
 .book-outline__author {
-  border: 2px solid darkmagenta;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 525;
 }
 
 .book-outline__stockoption__icon {
-  border: 2px solid darkmagenta;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  background-color: green;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  width: 75px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 2px 0px;
 }
 
 .book-outline__price {
-  border: 2px solid darkmagenta;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .trash-bin-image {
-  border: 2px solid slateblue;
+  border: none;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.trash-bin-image i {
+  cursor: pointer;
 }
 
 #main-section__book-description {
-  border: 2px solid blue;
+  border-left: 1px solid black;
+  margin: auto;
+  margin-bottom: 200px;
+  margin-top: 130px;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+
+#main-section__book-description__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#stock-option {
+  border: none;
+  border-bottom: 2px solid navy;
+  background-color: transparent;
+  height: 30px;
+  margin-top: 45px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .form-input {
   border: 2px solid forestgreen;
+  margin: 30px;
+  padding: 5px;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid navy;
+  background-color: transparent;
+  margin: 44.7px auto;
+  text-align: start;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.form-input::placeholder {
+  color: #b1aeae;
+}
+
+#add-book {
+  width: 175px;
+  height: 50px;
+  margin: auto;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  background-color: navy;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
