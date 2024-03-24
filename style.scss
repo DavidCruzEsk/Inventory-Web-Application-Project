@@ -8,8 +8,9 @@ body {
     background-color: grey;
 }
 .container {
-border: none;
-    background-color: rgb(245, 235, 222);
+    border: none;  
+    background: rgb(255,227,227);
+    background: linear-gradient(90deg, rgba(255,227,227,1) 1%, rgba(161,199,211,1) 46%, rgba(213,227,234,1) 83%);
    
     display: grid;
     grid-template-columns: .5fr 1.5fr 2fr;
@@ -25,19 +26,75 @@ border: none;
         writing-mode: vertical-rl;
         text-orientation: upright;
         transform: rotate(270deg);
-        color: navy;
-        font-family: 'Times New Roman', Times, serif;
+        color: rgb(12,54,68);
+        font-family:'Times New Roman', Times, serif;
         font-size: 45px;
         margin: 0px;
         padding: 0px;
     }
+}
+#Y {
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
+    padding-top: 2px;
+    // border-top-right-radius: 50%;
+    // border-bottom-right-radius: 50%;
+}
+#B {
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
+    padding-bottom: 2px;
+    // border-top-left-radius: 50%;
+    // border-bottom-left-radius: 50%;
+}
+#K {
+    // border-bottom: 1px solid white;
+    // border-top: 1px solid white;
+    padding-bottom: 2px;
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
+}
+#T {
+    // border-bottom: 1px solid white;
+    // border-top: 1px solid white;
+    padding-bottom: 2px;
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
+}
+#R {
+    // border-bottom: 1px solid white;
+    // border-top: 1px solid white;
+    padding-bottom: 2px;
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
+}
+#O1 {
+    // border-bottom: 1px solid white;
+    // border-top: 1px solid white;
+    padding-bottom: 2px;
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
+}
+#O2 {
+    // border-bottom: 1px solid white;
+    // border-top: 1px solid white;
+    padding-bottom: 2px;
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
+}
+#O3 {
+    // border-bottom: 1px solid white;
+    // border-top: 1px solid white;
+    padding-bottom: 2px;
+    // border-top: 10px solid white;
+    border-bottom: .5px solid darkcyan;
 }
 #main-section {
     border: 2px solid black;
 }
 #main-section__book-list {
     border: none;
-    height: 650px;
+    height: 1600px;
     overflow-y: scroll;
 }
 .book-added {
@@ -46,12 +103,19 @@ border: none;
     display: grid;
     grid-template-columns: 1fr 1.7fr 2fr;
     grid-template-rows: 1fr;
+    transition: margin-left 1s;
+}
+.book-added:hover {
+    margin-left: 100px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .6), rgba(255, 255, 255, .6), rgba(255, 255, 255, 0));
 }
 
 .bookcover {
     border: none;
+    transition: border-color 0.5s;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
-
 .book-outline {
     border: none;
     margin-left: 20px;
@@ -94,6 +158,9 @@ border: none;
 .trash-bin-image i {
     cursor: pointer;
 }
+.trash-bin-image i:hover {
+    color: red;
+}
 #main-section__book-description {
     border-left: 1px solid black;
     margin: auto;
@@ -101,6 +168,38 @@ border: none;
     margin-top: 130px;
     padding-left: 150px;
     padding-right: 100px;
+}
+.book-descript-section {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: '0px';
+    margin: '0px';
+    display: none;
+    opacity: 0;
+    
+    &__article {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__title {
+        font-size: 50px;
+        margin-bottom: 5px;
+        color: rgb(12,54,68);
+    }
+    &__author {
+        font-size: 25px;
+    }
+    &__image {
+        width: 350px;
+        height: 450px;
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+    &__book-description {
+        font-size: 30px;
+        color: rgb(40, 94, 94);
+        padding: 33.67px;
+    }
 }
 #main-section__book-description__form {
     display: grid;
