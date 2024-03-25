@@ -1,6 +1,6 @@
 # Booktory: A Basic Web Application Project
 
-[Booktory]() is a simple web application designed for managing a book inventory. Through this application, users can display books, add new books to the inventory, and remove books. This project focuses on leveraging fundamental web development skills, including extensive use of HTML, CSS, and JavaScript for DOM manipulation.
+[Booktory](https://davidcruzesk.github.io/Inventory-Web-Application-Project/) is a simple web application designed for managing a book inventory. Through this application, users can display books, add new books to the inventory, and remove books. This project focuses on leveraging fundamental web development skills, including extensive use of HTML, CSS, and JavaScript for DOM manipulation.
 
 <br/>
 <p align="center">
