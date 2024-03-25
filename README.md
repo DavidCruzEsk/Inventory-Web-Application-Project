@@ -1,0 +1,1 @@
+This project simulates a digital online inventory for books of all kinds. With this website, you can add or delete books into a section of inventory books and even click information into it to gain further information about each book.
